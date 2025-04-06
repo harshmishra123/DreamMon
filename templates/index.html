@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pokémon Generator</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="wrapper">
+    <h1 class="title">AI Pokémon Generator</h1>
+    <p class="subtitle">Enter your imagination. We’ll bring your Pokémon to life!</p>
+
+    <div class="prompt-box">
+      <input id="prompt" type="text" placeholder="Example: Ninja frog with blue armor and shuriken...">
+      <button onclick="generateImage()">Generate</button>
+    </div>
+
+    <div id="loading" class="loader hidden">Generating Image... 🔄</div>
+
+    <div id="output" class="image-card hidden">
+      <img id="resultImage" src="" alt="Generated Pokémon">
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+pymongo
+flask
+flask_cors
+diffusers
+peft
+torch
+safetensors
